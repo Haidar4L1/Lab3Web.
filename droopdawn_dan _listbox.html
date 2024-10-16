@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Dropdown and Multiple Selection Listbox</title>
+</head>
+<body>
+
+    <h2>Form with Dropdown and Multiple Selection Listbox</h2>
+
+    <form action="/submit" method="POST">
+        Dropdown Menu
+        <label for="dropdown">Select an Option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+
+        <br><br>
+
+        Listbox with Multiple Selection
+        <label for="listbox">Select Multiple Options:</label>
+        <select id="listbox" name="listbox[]" multiple size="5">
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 2</option>
+            <option value="item3">Item 3</option>
+            <option value="item4">Item 4</option>
+            <option value="item5">Item 5</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
